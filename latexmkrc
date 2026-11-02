@@ -1,4 +1,2 @@
-$latex = 'uplatex';
-$bibtex = 'pbibtex';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-$makeindex = 'mendex %O -o %D %S'
+$lualatex = 'lualatex -synctex=1 -interaction=nonstopmode -file-line-error %O %S';
+$pdf_mode = 4;
