@@ -1,0 +1,178 @@
+%
+% 公立はこだて未来大学卒業研究中間報告書[全コース対応版]
+%
+%         ファイル名："sample.tex"
+%
+% !TEX encoding = UTF-8
+% !TEX program = lualatex
+\documentclass[11pt]{ltjarticle}
+\usepackage{funinfosys}
+\usepackage{url}
+\usepackage{graphicx}
+\author{%
+1022179 西野理希\\指導教員 : イアン フランク
+}
+%\course{Information Systems Course}
+%\course{Advanced ICT Course} %% 高度ICTコースの場合はこちらを使用
+%\course{Information Design Course} %% 情報デザインコースの場合はこちらを使用
+\course{Complex Systems Course} %% 複雑系科学コースの場合はこちらを使用
+%\course{Intelligent Systems Course} %% 知能システムコースの場合はこちらを使用
+\title{作るか、選ぶか?\\教員による提示方法が教育動画の価値認識に与える影響}
+\etitle{Create or Curate?\\ How Instructor Framing Shapes the Value of Educational Video}
+\eauthor{NISHINO Riki}
+\abstract{大学教育では教育動画の活用が広がっている一方，教員が独自に動画を制作するには時間や技術的な負担が伴う．本研究では，既存の動画を選定するキュレーションに着目し，教員による動画の提示方法が学習者の価値認識に与える影響を検討する．大学生を対象としたオンライン実験を計画し，参加者を「教員が制作した動画」「教員が厳選した動画」「由来を説明しない動画」の3条件に割り当てる．参加者は各条件で共通の教育動画3本を視聴し，動画ごとに7段階のアンケートと理解度テストに回答する．主要評価指標は，教材としての適切性，授業への採用価値，他の学生への推奨評価から構成する教育的価値とし，提示条件間の差を分析する．現在は生成AIの文章生成を題材とした動画の脚本初稿を作成しており，今後は動画と実験手順の準備を進める．}
+\keywords{教育動画，キュレーション，提示方法，価値認識}
+\eabstract{Educational videos are widely used in higher education, but producing them can require substantial time and technical skills. This study examines whether instructor framing affects students' perceived value of educational videos, focusing on the distinction between creating and curating materials. An online experiment with university students is planned. Participants will be randomly assigned to one of three conditions: videos described as created by the instructor, videos described as carefully curated by the instructor, or videos presented without information about their origin. All participants will watch the same three videos and complete seven-point rating questionnaires and comprehension tests after each video. The primary outcome is perceived educational value, assessed through appropriateness as course material, value for classroom use, and willingness to recommend the video to other students. A draft script on generative AI has been prepared.}
+\ekeywords{Educational Videos, Curation, Framing, Perceived Value}
+\begin{document}
+\maketitle
+%\vspace*{-.5cm}
+
+\section{背景と目的}
+
+近年，大学教育においてオンライン学習環境の普及に伴い，教育動画の活用が広がっている．Noetelら\cite{noetel2021}は，高等教育における教育動画が学習成果の向上に寄与することを報告している．一方，教育動画の制作には時間や技術が必要であり，教員が独自に制作することには負担が伴う．そのため，既存の動画を教育目的に応じて選定・活用するキュレーションも，教材を準備する方法の一つとなる．
+
+教育動画の活用において，教員が自ら教材を制作することと，既存の教材を適切に選定することは，異なる形の教育的な関与である．しかし，これらの関与の違いが学習者による教材の評価にどのような影響を与えるかについては，十分に明らかになっていない．
+
+本研究では，教育におけるキュレーションの有効性を検討することを目的とする．具体的には，同一の教育動画を「教員が制作した動画」「教員が厳選した動画」「由来を説明しない動画」として提示する3条件を設定し，学習者が感じる教育的価値，有用性，信頼性などの評価を比較する．これにより，動画の内容ではなく，教員による提示方法の違いが学習者の価値認識に与える影響を明らかにすることを目指す．
+
+\section{複雑系コースにおける本研究の位置づけ}
+複雑系コースでは，自然や社会に見られる現象の法則性を分析し，実世界の課題に適用する能力の育成を目指している．本研究では，教育動画の提示方法と学習者の価値認識との関係を，提示条件を操作した比較実験によって検討する．実験で得られた評価データを定量的に分析することで，教材の提示方法が学習者の認識に及ぼす影響を調べ，教育現場における教材活用に向けた知見を得ることを目指す．
+
+\section{関連研究}
+
+教育動画の有効性について，Noetelら\cite{noetel2021}は，高等教育における教育動画の活用が学習成果の向上に寄与することを報告している．一方，Liesa-Orúsら\cite{liesa2023}は，大学教員のデジタル能力に関する課題を報告している．教育動画の制作においても，こうしたデジタル能力が求められるため，既存の教材を活用する方法について検討する意義がある．
+
+既存の教材を活用する方法として，DeschaineとSharma\cite{deschaine2015}は，デジタルキュレーションを教育目的に応じた学習資源の選定・整理・共有の活動として位置づけている．また，Flintoffら\cite{flintoff2014}は，教育や研究におけるデジタルキュレーションの重要性を論じている．これらの研究から，教育動画の活用には，教材の制作だけでなく，適切な教材を選定するという教員の役割も考えられる．
+
+一方，HovlandとWeiss\cite{hovland1951}は，情報源の信頼性が情報の受容に影響することを示している．また，RamlatchanとWatson\cite{ramlatchan2020}は，オンライン講義動画の提示方法が，学習者による教員の信頼性や心理的近接性の評価に影響することを報告している．これらの研究は，情報の内容だけでなく，その提示方法や情報源に対する認識も受け手の評価に関係することを示している．
+
+本研究では，これらの知見を踏まえ，同一の教育動画に対して教員が制作したと説明する場合と，教員が選定したと説明する場合を比較する．これにより，教員の関与に関する情報が学習者の価値認識に与える影響を検討する．
+
+\section{研究方法}
+
+\subsection{実験計画}
+
+本研究では，大学生を対象としたオンライン実験を計画している．参加者を制作条件，キュレーション条件，中立条件の3条件に無作為に割り当て，教員による提示方法の違いを比較する．制作条件では担当教員が制作した教材，キュレーション条件では担当教員が厳選した教材として動画を紹介し，中立条件では動画の由来に関する説明を行わない．
+
+各参加者は，割り当てられた条件のもとで，AIリテラシーに関する約3分間の教育動画を3本視聴する．動画は全条件で共通とし，提示順序は可能な範囲で均衡させる．
+
+\subsection{評価指標}
+
+各動画の視聴後，7段階評価によるアンケートと内容理解度テストを実施する．本研究では，学習者が主観的に評価する授業教材としての教育的価値を主要評価指標とする．教材としての適切性，授業への採用価値，他の学生への推奨評価の3項目を測定し，その平均得点を主要な分析対象とすることを検討している．
+
+副次評価指標として，学習上の有用性，説明内容の信頼性，満足度，学習意欲を各1項目で測定する．また，各動画に2〜3問の選択式理解度テストを設け，内容理解の状況を補助的に確認する．全動画の評価終了後には，動画の由来に関する参加者の認識を確認する．
+
+\subsection{分析方法}
+
+本研究では，同一参加者が3本の動画を評価することによる回答の依存関係を考慮し，線形混合効果モデルを主分析に用いることを計画している\cite{baayen2008}．
+
+主要評価指標である教育的価値の平均得点を目的変数とし，提示条件と動画の種類を固定効果，参加者をランダム効果として扱う．主要な比較はキュレーション条件と制作条件の差とし，中立条件との比較は副次的に検討する．
+
+推定には制限付き最尤法を用いることを検討し，参加者数やデータの特性を踏まえてKenward--Roger法による小標本補正の適用を判断する\cite{luke2017}．結果は条件間の推定差と95\%信頼区間を中心に報告する．また，参加者ごとの平均得点を用いた群間比較を補助的に行い，分析結果の整合性を確認する．
+
+\subsection{研究上の制約}
+
+本研究では，募集可能な参加者数に制約が生じる可能性がある．そのため，実際の参加者数に応じて統計的な検出力や推定精度を考慮し，分析結果を慎重に解釈する必要がある\cite{lakens2022}．また，有意差の有無だけで結論を判断せず，推定値の大きさと不確実性を踏まえて評価する．使用する動画や参加者集団が限られることによる一般化可能性の制約についても考慮する．
+
+また，刺激動画間の品質や難易度の違い，独自に作成した評価項目の妥当性についても，結果の解釈に際して留意する必要がある．
+
+\section{現在の進捗と今後の計画}
+
+\subsection{刺激動画の制作状況}
+
+現在，実験に使用する教育動画の準備を進めている．動画の題材には生成AIを検討しており，「生成AIはどのように回答を作るのか？」をテーマとした動画の脚本初稿を作成した．
+
+本動画は，AI初学者の大学生を対象に，生成AIによる文章生成の基本的な仕組みを説明するものである．図解・アニメーションとナレーションを用いた約3分間の構成を想定し，全5シーン・19カットに分けて映像内容や演出を設計した．特に，文章を処理する単位であるトークンと，次のトークンの予測・追加を繰り返す文章生成の仕組みを中心に扱っている．
+
+\subsection{今後の計画}
+
+今後は，実験に使用する3本の教育動画の準備を進めるとともに，参加者の募集方法や実験手順を具体化する．
+
+実験の評価方法については，教育的価値を主要評価指標とする方針を定め，質問項目と分析方法の検討を進めている．今後は，これらを具体化したうえでオンライン実験を実施する．
+
+実験実施後は，収集したデータを分析し，教員による提示方法が学習者の価値認識に与える影響を検討する．
+
+\section{結言}
+
+本研究では，教員による教育動画の提示方法が学習者の価値認識に与える影響を検討する．現在は，制作・キュレーション・中立の3条件による比較実験の設計を進め，評価指標や分析方法の検討と，実験に使用する教育動画の脚本作成を行っている．今後は，刺激動画の準備と実験手順の具体化を進め，オンライン実験を通じて各条件における評価の違いを分析する．これにより，教育におけるキュレーションの有効性について検討する．
+
+\begin{thebibliography}{99}
+
+\bibitem{noetel2021}
+Noetel, M., et al. (2021).
+Video improves learning in higher education:
+A systematic review.
+\textit{Review of Educational Research},
+91(2), 204--236.
+\url{https://doi.org/10.3102/0034654321990713}
+
+\bibitem{liesa2023}
+Liesa-Orús, M., Lozano Blasco, R.,
+\& Arce-Romeral, L. (2023).
+Digital competence in university lecturers:
+A meta-analysis of teaching challenges.
+\textit{Education Sciences}, 13(5), 508.
+\url{https://doi.org/10.3390/educsci13050508}
+
+\bibitem{deschaine2015}
+Deschaine, M. E., \& Sharma, S. A. (2015).
+The five Cs of digital curation:
+Supporting twenty-first-century teaching
+and learning.
+\textit{InSight: A Journal of Scholarly Teaching},
+10, 19--24.
+
+\bibitem{flintoff2014}
+Flintoff, K., Mellow, P.,
+\& Clark, K. P. (2014).
+Digital curation: Opportunities for learning,
+teaching, research and professional development.
+In \textit{Proceedings of the 23rd Annual
+Teaching Learning Forum}.
+University of Western Australia.
+
+\bibitem{hovland1951}
+Hovland, C. I., \& Weiss, W. (1951).
+The influence of source credibility on
+communication effectiveness.
+\textit{Public Opinion Quarterly},
+15(4), 635--650.
+\url{https://doi.org/10.1086/266350}
+
+\bibitem{ramlatchan2020}
+Ramlatchan, M., \& Watson, G. S. (2020).
+Enhancing instructor credibility and
+immediacy in online multimedia designs.
+\textit{Educational Technology Research
+and Development}, 68(1), 511--528.
+\url{https://doi.org/10.1007/s11423-019-09714-y}
+
+\bibitem{baayen2008}
+Baayen, R. H., Davidson, D. J.,
+\& Bates, D. M. (2008).
+Mixed-effects modeling with crossed
+random effects for subjects and items.
+\textit{Journal of Memory and Language},
+59(4), 390--412.
+\url{https://doi.org/10.1016/j.jml.2007.12.005}
+
+\bibitem{luke2017}
+Luke, S. G. (2017).
+Evaluating significance in linear
+mixed-effects models in R.
+\textit{Behavior Research Methods},
+49(4), 1494--1502.
+\url{https://doi.org/10.3758/s13428-016-0809-y}
+
+\bibitem{lakens2022}
+Lakens, D. (2022).
+Sample size justification.
+\textit{Collabra: Psychology}, 8(1), 33267.
+\url{https://doi.org/10.1525/collabra.33267}
+
+\end{thebibliography}
+\end{document}
+%
+%
+% EOF

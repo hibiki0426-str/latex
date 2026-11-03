@@ -1,0 +1,179 @@
+%
+% 公立はこだて未来大学卒業研究中間報告書[全コース対応版]
+%
+%         ファイル名："sample.tex"
+%
+% !TEX encoding = UTF-8
+% !TEX program = lualatex
+\documentclass[11pt]{ltjarticle}
+\usepackage{funinfosys}
+\usepackage{url}
+\usepackage{graphicx}
+\author{%
+1022179 西野理希\\指導教員 : イアン フランク
+}
+%\course{Information Systems Course}
+%\course{Advanced ICT Course} %% 高度ICTコースの場合はこちらを使用
+%\course{Information Design Course} %% 情報デザインコースの場合はこちらを使用
+\course{Complex Systems Course} %% 複雑系科学コースの場合はこちらを使用
+%\course{Intelligent Systems Course} %% 知能システムコースの場合はこちらを使用
+\title{作るか、選ぶか?\\教員による提示方法が教育動画の価値認識に与える影響}
+\etitle{Create or Curate?\\ How Instructor Framing Shapes the Value of Educational Video}
+\eauthor{NISHINO Riki}
+\abstract{大学教育では教育動画の活用が広がっている一方，教員が独自に動画を制作するには時間や技術的な負担が伴う．本研究では，既存の動画を選定するキュレーションに着目し，教員による動画の提示方法が学習者の価値認識に与える影響を検討する．大学生を対象としたオンライン実験を計画し，参加者を「教員が制作した動画」「教員が厳選した動画」「由来を説明しない動画」の3条件に割り当てる．参加者は各条件で共通の教育動画3本を視聴し，動画ごとに7段階のアンケートと理解度テストに回答する．主要評価指標は，教材としての適切性，授業への採用価値，他の学生への推奨評価から構成する教育的価値とし，提示条件間の差を分析する．現在は生成AIの文章生成を題材とした動画の脚本初稿を作成しており，今後は動画と実験手順の準備を進める．}
+\keywords{教育動画，キュレーション，提示方法，価値認識}
+\eabstract{Educational videos are widely used in higher education, but producing them can require substantial time and technical skills. This study examines whether instructor framing affects students' perceived value of educational videos, focusing on the distinction between creating and curating materials. An online experiment with university students is planned. Participants will be randomly assigned to one of three conditions: videos described as created by the instructor, videos described as carefully curated by the instructor, or videos presented without information about their origin. All participants will watch the same three videos and complete seven-point rating questionnaires and comprehension tests after each video. The primary outcome is perceived educational value, assessed through appropriateness as course material, value for classroom use, and willingness to recommend the video to other students. A draft script on generative AI has been prepared.}
+\ekeywords{Educational Videos, Curation, Framing, Perceived Value}
+\begin{document}
+\maketitle
+%\vspace*{-.5cm}
+
+\section{Background and Objectives}
+
+In recent years, educational videos have become increasingly widespread in higher education as online learning environments have expanded. Noetel et al.\ \cite{noetel2021} reported that educational videos contribute to improved learning outcomes in higher education. However, producing educational videos requires time and technical skills, placing a burden on instructors who create their own materials. Curating existing videos by selecting and using them for educational purposes is therefore another way to prepare teaching materials.
+
+In the use of educational videos, creating materials and appropriately selecting existing materials represent different forms of instructional involvement. However, it remains unclear how these differences in instructor involvement affect students' evaluations of the materials.
+
+This study aims to examine the effectiveness of curation in education. Specifically, it compares three conditions in which identical educational videos are presented as ``created by the instructor,'' ``carefully selected by the instructor,'' or without information about their origin. Students' evaluations of educational value, usefulness, credibility, and related attributes will be compared. The objective is to identify how differences in instructor framing, rather than in video content, affect students' perceived value of educational videos.
+
+\section{Relevance to the Complex Systems Course}
+
+The Complex Systems Course aims to develop the ability to analyze patterns and regularities in natural and social phenomena and apply the resulting knowledge to real-world problems. This study examines the relationship between the framing of educational videos and students' perceived value through a comparative experiment that manipulates the presentation condition. By quantitatively analyzing the resulting evaluation data, the study seeks to investigate how the presentation of instructional materials influences students' perceptions and to obtain insights relevant to the use of educational materials in practice.
+
+\section{Related Work}
+
+Regarding the effectiveness of educational videos, Noetel et al.\ \cite{noetel2021} reported that their use in higher education contributes to improved learning outcomes. Meanwhile, Liesa-Or\'us et al.\ \cite{liesa2023} discussed challenges related to university instructors' digital competence. Because producing educational videos also requires such competence, it is meaningful to consider ways of using existing instructional materials.
+
+As an approach to using existing materials, Deschaine and Sharma \cite{deschaine2015} characterized digital curation as selecting, organizing, and sharing learning resources according to educational purposes. Flintoff et al.\ \cite{flintoff2014} also discussed the importance of digital curation in education and research. These studies suggest that instructors' roles in using educational videos involve not only producing content but also selecting appropriate materials.
+
+From another perspective, Hovland and Weiss \cite{hovland1951} showed that source credibility affects the reception of information. Ramlatchan and Watson \cite{ramlatchan2020} reported that the presentation format of online lecture videos affects students' perceptions of instructor credibility and psychological immediacy. Together, these findings suggest that evaluations may depend not only on information content but also on how it is presented and how its source is perceived.
+
+Building on these findings, this study compares the evaluation of identical educational videos when they are described as having been created by an instructor versus selected by that instructor. It thus examines the effect of information about instructor involvement on students' perceived value.
+
+\section{Research Methods}
+
+\subsection{Experimental Design}
+
+An online experiment with university students is planned. Participants will be randomly assigned to one of three conditions: Create, Curate, or Neutral. In the Create condition, each video will be introduced as material produced by the course instructor. In the Curate condition, it will be introduced as material carefully selected by the course instructor. In the Neutral condition, no additional explanation of the video's origin will be provided.
+
+Each participant will watch three educational videos on AI literacy, each approximately three minutes long, under their assigned condition. The same videos will be used in all conditions, and presentation order will be balanced as far as practicable.
+
+\subsection{Evaluation Measures}
+
+After each video, participants will complete a seven-point rating questionnaire and a content-comprehension test. The primary outcome will be the educational value of the video as a course resource, as subjectively perceived by students. Three items will assess appropriateness as course material, value for inclusion in a course, and willingness to recommend the video to other students. The mean of these three ratings is being considered as the primary analysis measure.
+
+Secondary outcomes will be measured using one item each for usefulness in learning, credibility of the explanation, satisfaction, and motivation to learn. In addition, each video will have two or three multiple-choice comprehension questions to provide supplementary information about participants' understanding. After all three videos have been evaluated, participants will be asked how they perceived the origin of the presented videos.
+
+\subsection{Analysis Methods}
+
+Because each participant will evaluate three videos, the responses may be correlated within participants. A linear mixed-effects model is therefore planned as the primary analysis to account for this dependence \cite{baayen2008}.
+
+The dependent variable will be the mean perceived-educational-value score. Presentation condition and video identity will be treated as fixed effects, and participant will be treated as a random effect. The primary comparison will be between Curate and Create, while comparisons involving Neutral will be secondary.
+
+Restricted maximum likelihood estimation is being considered, and the use of the Kenward--Roger small-sample correction will be determined in light of the participant count and characteristics of the data \cite{luke2017}. Results will focus on estimated differences between conditions and their 95\% confidence intervals. Group comparisons using participant-level mean scores will also be conducted as supplementary analyses to check the consistency of the findings.
+
+\subsection{Research Limitations}
+
+The number of participants who can be recruited may be constrained. Statistical power and estimation precision will therefore need to be considered in light of the actual sample size, and results will be interpreted cautiously \cite{lakens2022}. Conclusions will not be based solely on whether a difference is statistically significant; the magnitude and uncertainty of estimated effects will also be taken into account. The limited set of videos and the characteristics of the participant group may further constrain generalizability.
+
+Differences in quality or difficulty across stimulus videos, as well as the validity of the independently developed evaluation items, must also be considered when interpreting the results.
+
+\section{Current Progress and Future Plans}
+
+\subsection{Development of Stimulus Videos}
+
+Preparations are underway for the educational videos to be used in the experiment. Generative AI is being considered as the subject area, and an initial script has been prepared for a video titled ``How Does Generative AI Produce Responses?''
+
+The video is intended for university students with little prior knowledge of AI and explains the basic mechanism by which generative AI produces text. It is planned as an approximately three-minute video using diagrams, animation, and narration. The visual content and presentation have been designed as five scenes comprising 19 shots. The main topics are tokens as units of text processing and the repeated prediction and addition of subsequent tokens during text generation.
+
+\subsection{Future Plans}
+
+The next steps are to prepare the three educational videos for the experiment and specify the participant recruitment process and experimental procedures.
+
+Educational value has been selected as the primary outcome, while questionnaire items and analysis methods are still being refined. Once these details have been established, the online experiment will be conducted.
+
+After the experiment, the collected data will be analyzed to examine how instructor framing influences students' perceived value of educational videos.
+
+\section{Conclusion}
+
+This study examines the influence of instructor framing on students' perceived value of educational videos. Work is currently underway on designing a comparison of the Create, Curate, and Neutral conditions, refining the evaluation measures and analysis methods, and preparing a script for one of the educational videos. The next steps are to prepare the stimulus videos, finalize the experimental procedures, and analyze differences in evaluation across the conditions through an online experiment. The findings will be used to examine the effectiveness of curation in education.
+
+\begin{thebibliography}{99}
+
+\bibitem{noetel2021}
+Noetel, M., et al. (2021).
+Video improves learning in higher education:
+A systematic review.
+\textit{Review of Educational Research},
+91(2), 204--236.
+\url{https://doi.org/10.3102/0034654321990713}
+
+\bibitem{liesa2023}
+Liesa-Orús, M., Lozano Blasco, R.,
+\& Arce-Romeral, L. (2023).
+Digital competence in university lecturers:
+A meta-analysis of teaching challenges.
+\textit{Education Sciences}, 13(5), 508.
+\url{https://doi.org/10.3390/educsci13050508}
+
+\bibitem{deschaine2015}
+Deschaine, M. E., \& Sharma, S. A. (2015).
+The five Cs of digital curation:
+Supporting twenty-first-century teaching
+and learning.
+\textit{InSight: A Journal of Scholarly Teaching},
+10, 19--24.
+
+\bibitem{flintoff2014}
+Flintoff, K., Mellow, P.,
+\& Clark, K. P. (2014).
+Digital curation: Opportunities for learning,
+teaching, research and professional development.
+In \textit{Proceedings of the 23rd Annual
+Teaching Learning Forum}.
+University of Western Australia.
+
+\bibitem{hovland1951}
+Hovland, C. I., \& Weiss, W. (1951).
+The influence of source credibility on
+communication effectiveness.
+\textit{Public Opinion Quarterly},
+15(4), 635--650.
+\url{https://doi.org/10.1086/266350}
+
+\bibitem{ramlatchan2020}
+Ramlatchan, M., \& Watson, G. S. (2020).
+Enhancing instructor credibility and
+immediacy in online multimedia designs.
+\textit{Educational Technology Research
+and Development}, 68(1), 511--528.
+\url{https://doi.org/10.1007/s11423-019-09714-y}
+
+\bibitem{baayen2008}
+Baayen, R. H., Davidson, D. J.,
+\& Bates, D. M. (2008).
+Mixed-effects modeling with crossed
+random effects for subjects and items.
+\textit{Journal of Memory and Language},
+59(4), 390--412.
+\url{https://doi.org/10.1016/j.jml.2007.12.005}
+
+\bibitem{luke2017}
+Luke, S. G. (2017).
+Evaluating significance in linear
+mixed-effects models in R.
+\textit{Behavior Research Methods},
+49(4), 1494--1502.
+\url{https://doi.org/10.3758/s13428-016-0809-y}
+
+\bibitem{lakens2022}
+Lakens, D. (2022).
+Sample size justification.
+\textit{Collabra: Psychology}, 8(1), 33267.
+\url{https://doi.org/10.1525/collabra.33267}
+
+\end{thebibliography}
+\end{document}
+%
+%
+% EOF
